@@ -113,10 +113,14 @@ nav {
   padding: 1rem 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: "Urbanist", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
 nav img {
-  width: 100px;
+  width: 80px;
 }
 
 nav h1 {
@@ -488,12 +492,14 @@ form button:focus {
 
 /* Dark Mode */
 body.dark-mode {
-  background-color: #333;
+  background-color: #121212;
   color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.dark-mode nav {
-  background-color: #03012d;
+  background-color: #333;
+  transition: background-color 0.3s ease;
 }
 
 body.dark-mode .signup-form,
@@ -501,8 +507,10 @@ body.dark-mode .login-form,
 body.dark-mode .movie-details {
   background-color: #333;
   color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.dark-mode .movie-card {
   background-color: #1c1c1c;
+  transition: background-color 0.3s ease;
 }

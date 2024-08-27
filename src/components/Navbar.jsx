@@ -37,10 +37,10 @@ const Navbar = () => {
         <Link to="/">Home</Link>
         {!user ? (
           <>
-            <Link to="/signup" style={{ marginLeft: "3rem" }}>
+            <Link to="/signup" style={{ marginLeft: "1.2rem" }}>
               Sign Up
             </Link>
-            <Link to="/login" style={{ marginLeft: "3rem" }}>
+            <Link to="/login" style={{ marginLeft: "1.2rem" }}>
               Login
             </Link>
           </>
