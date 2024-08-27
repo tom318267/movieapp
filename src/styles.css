@@ -1,0 +1,508 @@
+body {
+  font-family: "Urbanist", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Urbanist", sans-serif;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+/* Main Heading */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #34495e;
+}
+
+/* Subheadings */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Paragraph Text */
+p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Links */
+a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* Button Text */
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Input Fields */
+input {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Forms */
+form {
+  font-size: 1rem;
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #f0f0f0;
+}
+
+body.dark-mode p,
+body.dark-mode a {
+  color: #cccccc;
+}
+
+body.dark-mode a:hover {
+  color: #ffffff;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #03012d;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Urbanist", sans-serif;
+}
+
+nav img {
+  width: 100px;
+}
+
+nav h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+nav button:hover {
+  background-color: #ff3b3b;
+}
+
+/* Search Form Styles */
+form {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  font-family: "Urbanist", sans-serif;
+}
+
+form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  width: 300px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #ff6b6b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+form button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+  background-color: #ff3b3b;
+}
+
+form button:focus {
+  outline: none;
+  background-color: #ff3b3b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+.signup-form {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Heading style */
+.signup-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Input field styles */
+.signup-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus state for inputs */
+.signup-form input:focus {
+  border-color: #333;
+  outline: none;
+}
+
+/* Button styles */
+.signup-form button {
+  width: 100%; /* Full width */
+  padding: 0.75rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.signup-form button:hover {
+  background-color: #555;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+  .signup-form {
+    padding: 1.5rem;
+  }
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Heading style */
+.login-form h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Error message style */
+.login-form p {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Input field styles */
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus state for inputs */
+.login-form input:focus {
+  border-color: #333;
+  outline: none;
+}
+
+/* Button styles */
+.login-form button {
+  width: 100%; /* Full width */
+  padding: 0.75rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Hover state for button */
+.login-form button:hover {
+  background-color: #555;
+}
+
+/* Disabled state for button */
+.login-form button:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 1.5rem;
+  }
+}
+
+/* Movie List and Cards */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.movie-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.movie-card h2 {
+  font-size: 1.5rem;
+  padding: 10px 5px 10px 5px;
+}
+
+.movie-card a {
+  text-decoration: none;
+}
+
+.movie-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  border-bottom: 2px solid #ff6b6b;
+}
+
+.movie-card h3 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  color: #333;
+}
+
+.movie-card p {
+  margin: 0 1rem 1rem;
+  color: #666;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Movie Details Page */
+.movie-details-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.movie-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Adjust the image size and alignment */
+.movie-details img {
+  flex: 0 0 300px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* Movie info section styling */
+.movie-info {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.movie-info h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.movie-info p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Trailer section styling */
+.trailer-container {
+  margin-top: 2rem;
+}
+
+.trailer-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .movie-details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .movie-info {
+    padding-left: 0;
+    margin-top: 1.5rem;
+  }
+
+  .trailer-container iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive Adjustments for Movie List */
+@media (min-width: 768px) {
+  .movie-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode nav {
+  background-color: #03012d;
+}
+
+body.dark-mode .signup-form,
+body.dark-mode .login-form,
+body.dark-mode .movie-details {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode .movie-card {
+  background-color: #1c1c1c;
+}
